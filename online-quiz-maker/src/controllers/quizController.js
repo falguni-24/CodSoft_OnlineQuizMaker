@@ -1,5 +1,5 @@
 const { pool } = require('../config/db');
-const { cleanString, getOptionText, validateQuiz } = require('../utils/validation');
+const { cleanString, validateQuiz } = require('../utils/validation');
 
 exports.list = async (_req, res) => {
   try {
@@ -32,7 +32,7 @@ exports.create = async (req, res) => {
         [quiz.insertId, cleanString(q.text, 1000), cleanString(q.explanation || '', 1000), req.body.questions.indexOf(q) + 1]);
       for (let i = 0; i < 4; i++) {
         await conn.execute('INSERT INTO options (question_id,option_text,is_correct,position) VALUES (?,?,?,?)',
-          [question.insertId, cleanString(getOptionText(q.options[i]), 500), i === Number(q.correctIndex) ? 1 : 0, i + 1]);
+          [question.insertId, cleanString(q.options[i].text, 500), i === Number(q.correctIndex) ? 1 : 0, i + 1]);
       }
     }
     await conn.commit();

@@ -1,4 +1,4 @@
-# QuizSpark — Online Quiz Maker
+# QuizCraft — Online Quiz Maker
 
 A beginner-friendly full-stack quiz application built with HTML, CSS, JavaScript, Node.js, Express and MySQL.
 

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Create, share and take online quizzes.">
-  <title>QuizSpark — Online Quiz Maker</title><link rel="stylesheet" href="/css/styles.css">
+  <title>QuizCraft — Online Quiz Maker</title><link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#" data-page="home"><span class="brand-mark">Q</span> QuizSpark</a>
+<header class="topbar"><a class="brand" href="#" data-page="home"><span class="brand-mark">Q</span> QuizCraft</a>
 <nav><button class="nav-link" data-page="quizzes">Explore quizzes</button><button class="nav-link hidden" id="dashboardNav" data-page="dashboard">Dashboard</button></nav>
 <div class="nav-actions" id="navActions"><button class="btn btn-outline" data-page="login">Log in</button><button class="btn btn-primary" data-page="register">Get started</button></div>
 </header>
@@ -21,7 +21,7 @@
   <div class="feature-row"><div><span class="feature-icon">✎</span><strong>Easy quiz builder</strong><p>Add questions and four answer choices.</p></div><div><span class="feature-icon">◷</span><strong>Learn at your pace</strong><p>Practice with an optional timer.</p></div><div><span class="feature-icon">↗</span><strong>Track your progress</strong><p>Review scores in your dashboard.</p></div></div>
   <section class="section"><div class="section-heading"><div><span class="eyebrow">START EXPLORING</span><h2>Popular quizzes</h2></div><button class="text-button" data-page="quizzes">View all quizzes →</button></div><div id="homeQuizList" class="quiz-grid"><div class="loading">Loading quizzes…</div></div></section>
 </section>
-<section id="loginPage" class="page hidden"><div class="auth-layout"><div class="auth-aside"><span class="eyebrow">WELCOME BACK</span><h2>Your next bright idea starts here.</h2><p>Log in to create quizzes and see your learning journey.</p></div><form id="loginForm" class="panel form-panel"><h2>Log in</h2><p class="muted">Welcome back to QuizSpark.</p><label>Email address<input type="email" name="email" required autocomplete="email"></label><label>Password<input type="password" name="password" required autocomplete="current-password"></label><button class="btn btn-primary full" type="submit">Log in</button><p class="form-foot">New here? <button class="inline-button" type="button" data-page="register">Create an account</button></p></form></div></section>
+<section id="loginPage" class="page hidden"><div class="auth-layout"><div class="auth-aside"><span class="eyebrow">WELCOME BACK</span><h2>Your next bright idea starts here.</h2><p>Log in to create quizzes and see your learning journey.</p></div><form id="loginForm" class="panel form-panel"><h2>Log in</h2><p class="muted">Welcome back to QuizCraft.</p><label>Email address<input type="email" name="email" required autocomplete="email"></label><label>Password<input type="password" name="password" required autocomplete="current-password"></label><button class="btn btn-primary full" type="submit">Log in</button><p class="form-foot">New here? <button class="inline-button" type="button" data-page="register">Create an account</button></p></form></div></section>
 <section id="registerPage" class="page hidden"><div class="auth-layout"><div class="auth-aside"><span class="eyebrow">MAKE LEARNING YOURS</span><h2>Build a little knowledge every day.</h2><p>Sign up to create quizzes and save your results.</p></div><form id="registerForm" class="panel form-panel"><h2>Create account</h2><p class="muted">It only takes a moment.</p><label>Your name<input name="name" required minlength="2" maxlength="80" autocomplete="name"></label><label>Email address<input type="email" name="email" required autocomplete="email"></label><label>Password<input type="password" name="password" required minlength="8" maxlength="72" autocomplete="new-password"><small>Use at least 8 characters.</small></label><button class="btn btn-primary full" type="submit">Create account</button><p class="form-foot">Already registered? <button class="inline-button" type="button" data-page="login">Log in</button></p></form></div></section>
 <section id="quizzesPage" class="page hidden"><div class="page-heading"><div><span class="eyebrow">QUIZ LIBRARY</span><h1>Find your next challenge</h1><p class="muted">Pick a quiz and see what you know.</p></div><button class="btn btn-primary" data-page="create">＋ Create quiz</button></div><div id="quizList" class="quiz-grid"><div class="loading">Loading quizzes…</div></div></section>
 <section id="createPage" class="page hidden"><div class="page-heading"><div><span class="eyebrow">QUIZ BUILDER</span><h1>Create a quiz</h1><p class="muted">Add your quiz details and questions below.</p></div></div>
@@ -31,6 +31,6 @@
 <section id="resultsPage" class="page hidden"><div id="resultsRoot"></div></section>
 <section id="dashboardPage" class="page hidden"><div class="page-heading"><div><span class="eyebrow">YOUR WORKSPACE</span><h1>Your dashboard</h1><p class="muted">Your quizzes and learning history, all in one place.</p></div><button class="btn btn-primary" data-page="create">＋ Create quiz</button></div><div id="dashboardRoot"></div></section>
 </main>
-<footer><a class="brand" href="#" data-page="home"><span class="brand-mark">Q</span> QuizSpark</a><span>Make learning a habit.</span></footer>
+<footer><a class="brand" href="#" data-page="home"><span class="brand-mark">Q</span> QuizCraft</a><span>Make learning a habit.</span></footer>
 <script src="/js/app.js" defer></script>
 </body></html>

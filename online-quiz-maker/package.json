@@ -1,5 +1,5 @@
 {
-  "name": "QuizSpark",
+  "name": "online-quiz-maker",
   "version": "1.0.0",
   "description": "Beginner-friendly online quiz maker using HTML, CSS, JavaScript, Express and MySQL",
   "main": "server.js",
